@@ -1,0 +1,18 @@
+---
+layout: default
+title: Blog Posts
+description: Aman Nanner | Senior Engineering Manager @ Akamai
+---
+<div align="center">
+    {% include header.html %}
+    <h1>Latest Posts</h1>
+
+    <ul>
+    {% for post in site.posts %}
+        <li style="display: inline-block;">
+        <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+        {{ post.excerpt }}
+        </li>
+    {% endfor %}
+    </ul>
+</div>

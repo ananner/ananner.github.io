@@ -1,0 +1,10 @@
+<img src="assets/img/Profile.jpg" style="border: 5px solid #555;"/><br>
+<span class="fab fa-linkedin" onclick="window.open('https://www.linkedin.com/in/aman-nanner-b710b83')"></span> |
+<span class="fab fa-twitter" onclick="window.open('https://twitter.com/ananner')"></span>
+<br><br>
+<nav>
+  <h3>
+    <a class="nav" {% if page.url == "/" %}style="color: red;"{% endif %} href="/">Home</a> |
+    <a class="nav" {% if page.url == "/blog.html" %}style="color: red;"{% endif %} href="/blog.html">Blog Posts</a>
+  </h3>
+</nav>
